@@ -2,8 +2,8 @@ module Memorable
 
   def initialize(name)
     self.class.all << name
-  end 
-  
+  end
+
   def reset_all
     self.all.clear
   end
