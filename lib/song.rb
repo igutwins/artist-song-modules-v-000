@@ -18,19 +18,19 @@ class Song
     @@songs
   end
 
-  #def self.reset_all #this method could be refactored - class method
-  #  self.all.clear
-  #end
-
-  #def self.count #this method could be refactored - class method
-  #  self.all.count
-  #end
+#  def self.reset_all
+#    self.all.clear
+#  end
+#
+#  def self.count
+#    self.all.count
+#  end
 
   def artist=(artist)
     @artist = artist
   end
 
-  def to_param #this method could be refactored - instance method
+  def to_param
     name.downcase.gsub(' ', '-')
   end
 end
